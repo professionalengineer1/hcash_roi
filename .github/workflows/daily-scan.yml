@@ -3,7 +3,7 @@ name: Daily on-chain scan
 # Refreshes data/*.json snapshots from Avalanche contracts and pushes the
 # changes to master. Vercel auto-deploys on push, so the live dashboard
 # picks up fresh data within ~2 min of the workflow completing.
-#
+# FIXME daily is now failing, Github credits low
 # Why this exists: Vercel Blob's free-tier ops cap blocks our normal cron
 # write path. GitHub Actions has 2000 free minutes/month for private repos,
 # enough for a daily scan (~12 min/run × 30 days = 360 min/mo).
